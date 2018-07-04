@@ -31,3 +31,5 @@ sysinfo.txt
 *.unitypackage
 BeatEmUp2018/Assets/TextMesh Pro/Plugins/
 BeatEmUp2018/.collabignore
+BeatEmUp2018/.vs/BeatEmUp2018/v15/Server/sqlite3/storage.ide
+BeatEmUp2018/.vs/BeatEmUp2018/v15/Server/sqlite3/db.lock
