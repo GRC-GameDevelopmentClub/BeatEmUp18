@@ -31,3 +31,4 @@ sysinfo.txt
 *.unitypackage
 BeatEmUp2018/Assets/TextMesh Pro/Plugins/
 BeatEmUp2018/.collabignore
+*.lock
