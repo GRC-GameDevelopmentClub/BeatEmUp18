@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour {
 
         if(grounded && Input.GetKey(jump))
         {
-            rb.AddForce(new Vector2(0,jumpForce));
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
  
 		
