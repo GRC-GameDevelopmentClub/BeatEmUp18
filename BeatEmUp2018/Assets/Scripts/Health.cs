@@ -24,8 +24,9 @@ public class Health : MonoBehaviour {
 		
 	}
 
-    void takeDamage(float damage)
+    public void TakeDamage(float damage)
     {
+
         if (health - damage >= 0)
         {
             health -= damage;
@@ -36,7 +37,7 @@ public class Health : MonoBehaviour {
         }
     }
 
-    void giveHealth(float hp)
+    public void GiveHealth(float hp)
     {
         if (health + hp <= MAX_HEALTH)
         {
