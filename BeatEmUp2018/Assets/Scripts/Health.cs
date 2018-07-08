@@ -8,7 +8,7 @@ public class Health : MonoBehaviour {
     private float MAX_HEALTH;
 
     public Color deathColor;
-    private Color defualtColor;
+    private Color defaultColor;
 
     private SpriteRenderer sr;
 
@@ -16,17 +16,33 @@ public class Health : MonoBehaviour {
 	void Start () {
         MAX_HEALTH = health;
         sr = GetComponentInChildren<SpriteRenderer>();
-        defualtColor = sr.color;
+        defaultColor = sr.color;
 	}
-	
+
+    float timer;
 	// Update is called once per frame
 	void Update () {
-		
+
+        if (sr.color != defaultColor)
+        {
+            timer += Time.deltaTime;
+            if (timer > 0.25f)
+            {
+                sr.color = defaultColor;
+                timer = 0;
+            }
+        }
+
+        if (health <= 0)
+        {
+            sr.color = deathColor;
+        }
+
 	}
 
     public void TakeDamage(float damage)
     {
-
+        sr.color = deathColor;
         if (health - damage >= 0)
         {
             health -= damage;
