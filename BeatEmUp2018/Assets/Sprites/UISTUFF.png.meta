@@ -7,6 +7,7 @@ TextureImporter:
     21300000: UISTUFF_0
     21300002: UISTUFF_1
     21300004: UISTUFF_2
+    21300006: UISTUFF_3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -134,10 +135,24 @@ TextureImporter:
       name: UISTUFF_2
       rect:
         serializedVersion: 2
-        x: 904
+        x: 907
         y: 448
         width: 395
         height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UISTUFF_3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 146
+        width: 244
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
